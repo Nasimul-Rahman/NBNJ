@@ -1,40 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/5e8ced63ce.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
-    <title>NBNJ Limited - Modern Real Estate Company in Bangladesh</title>
-    <link rel="icon" type="image/x-icon" href="../CSS/media/nbnj-logo-small.png">
-  </head>
-  <body>
+    <link rel="stylesheet" type="text/css" href="./CSS/style.css">
+    <title>NBNJN Limited - Modern Real Estate Company in Bangladesh</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'base/media/nbnj-logo-small.png' %}">
+</head>
+<body>
 
     <div id="preloader"></div>
 
     <div class="mobile-nav">
       <div class="mobile-nav-hyperlinks">
         <a class='navbar-hyperlinks-x' href='#'><i class="fa-solid fa-x"></i></a>
-        <a class='mobile-nav-hyperlinks-active' href="{% url 'home' %}">HOME</a>
-        <a class='mobile-nav-hyperlinks-inactive' href="{% url 'about' %}">ABOUT</a>
+        <a class='mobile-nav-hyperlinks-active' href="./index.html">HOME</a>
+        <a class='mobile-nav-hyperlinks-inactive' href="./about.html">ABOUT</a>
         <a class='mobile-nav-hyperlinks-inactive' href="">PROJECTS</a>
         <a class='mobile-nav-hyperlinks-inactive' href="">CONTACT</a>
       </div>
     </div>
 
     <div class="container">
-      <div class="banner">
+      <div class="banner-about">
         <div class="navbar">
-          <div class="navbar-logo"></div>
+          <div class="navbar-logo">
+          </div>
           <div class="navbar-hyperlinks">
-              <a class='navbar-hyperlinks-active' href="{% url 'home' %}">HOME</a>
-              <a class='navbar-hyperlinks-inactive' href="{% url 'about' %}">ABOUT</a>
+              <a class='navbar-hyperlinks-inactive' href="./index.html">HOME</a>
+              <a class='navbar-hyperlinks-active' href="./about.html">ABOUT</a>
               <a class='navbar-hyperlinks-inactive' href="">PROJECTS</a>
               <a class='navbar-hyperlinks-inactive' href="">CONTACT</a>
           </div>
           <div class="navbar-hamburger"></div>
         </div>
+        <h2 class="title">ABOUT THE COMPANY</h2>
+      </div>
+
+      <div class="goal">
+        <div class="aboutme-description">
+          <h2>GOAL</h2>
+          <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</h4>
+          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. iatis unde omnis iste natus error sit voluptatem accusantium doloremque lau fugiat nulla pariatur.</p>
+        </div>
+      </div>
+
+      <div class="staff">
       </div>
 
       <div class="aboutme">
@@ -43,10 +53,9 @@
         </div>
         <div class="aboutme-description">
           <h2>ABOUT</h2>
-          <img src="{% static 'base/media/sep.png' %}" alt="">
-          <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</h5>
+          <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</h4>
           <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. iatis unde omnis iste natus error sit voluptatem accusantium doloremque lau fugiat nulla pariatur.</p>
-          <a class="aboutme-description-btn" href="{% url 'about' %}">MORE</a>
+          <a href="#">MORE</a>
         </div>
       </div>
 
@@ -89,10 +98,5 @@
         var mobileNav = document.querySelector('.mobile-nav').classList.remove('mobile-nav-active')
         console.log('working')
       })
-
-
     </script>
-  </body>
-
-
-</html>
+</body>

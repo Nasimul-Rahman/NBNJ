@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5e8ced63ce.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <title>NBNJ Limited - Modern Real Estate Company in Bangladesh</title>
+    <link rel="icon" type="image/x-icon" href=/CSS/media/nbnj-logo-small.png">
+  </head>
+  <body>
+
+    <div id="preloader"></div>
+
+    <div class="mobile-nav">
+      <div class="mobile-nav-hyperlinks">
+        <a class='navbar-hyperlinks-x' href='#'><i class="fa-solid fa-x"></i></a>
+        <a class='mobile-nav-hyperlinks-active' href="index.html">HOME</a>
+        <a class='mobile-nav-hyperlinks-inactive' href="about.html">ABOUT</a>
+        <a class='mobile-nav-hyperlinks-inactive' href="">PROJECTS</a>
+        <a class='mobile-nav-hyperlinks-inactive' href="">CONTACT</a>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="banner">
+        <div class="navbar">
+          <div class="navbar-logo"></div>
+          <div class="navbar-hyperlinks">
+              <a class='navbar-hyperlinks-active' href="./index.html">HOME</a>
+              <a class='navbar-hyperlinks-inactive' href="./about.html">ABOUT</a>
+              <a class='navbar-hyperlinks-inactive' href="">PROJECTS</a>
+              <a class='navbar-hyperlinks-inactive' href="">CONTACT</a>
+          </div>
+          <div class="navbar-hamburger"></div>
+        </div>
+      </div>
+
+      <div class="aboutme">
+        <div class="aboutme-collage">
+          <img class="aboutme-collage-img" src="{% static 'base/media/home-aboutme.jpg' %}" alt="">
+        </div>
+        <div class="aboutme-description">
+          <h2>ABOUT</h2>
+          <img src="{% static 'base/media/sep.png' %}" alt="">
+          <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</h5>
+          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. iatis unde omnis iste natus error sit voluptatem accusantium doloremque lau fugiat nulla pariatur.</p>
+          <a class="aboutme-description-btn" href="{% url 'about' %}">MORE</a>
+        </div>
+      </div>
+
+      <footer>
+        <p>© 2022 NBNJ Limited | All Rights Reserved</p>
+      </footer>
+
+    </div>
+
+    <script>
+      window.addEventListener('scroll', function() {
+        var header = document.querySelector('.navbar');
+        var header_logo = document.querySelector('.navbar-logo')
+        var header_links_active = document.querySelector('.navbar-hyperlinks-active')
+        var header_links_inactive = document.querySelectorAll('.navbar-hyperlinks-inactive')
+        header.classList.toggle('sticky', window.scrollY)
+        header_logo.classList.toggle('resized', window.scrollY)
+        header_links_active.classList.toggle('underline', window.scrollY)
+        for (let i = 0; i < 3; i++) {
+          header_links_inactive[i].classList.toggle('inactive-underline', window.scrollY)
+        }
+      })
+
+      var loader = document.getElementById("preloader");
+
+      window.addEventListener('load', function(){
+        loader.style.display = "none"
+      })
+
+      var hamburger = document.querySelector('.navbar-hamburger')
+
+      hamburger.addEventListener('click', function() {
+        var mobileNav = document.querySelector('.mobile-nav').classList.add('mobile-nav-active')
+        console.log('working')
+      })
+
+      var mobileNavX = document.querySelector('.navbar-hyperlinks-x')
+
+      mobileNavX.addEventListener('click', function() {
+        var mobileNav = document.querySelector('.mobile-nav').classList.remove('mobile-nav-active')
+        console.log('working')
+      })
+
+
+    </script>
+  </body>
+
+
+</html>
