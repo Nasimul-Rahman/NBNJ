@@ -1,8 +1,68 @@
-.goal {
-  width: 100%;
-  height: 388px;
+.aboutpage_main_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  margin-left: 50px;
+  margin-right: 50px;
+
+  height: 110vh;
+}
+
+.values {
+  width: 50%;
+  height: 70vh;
+  padding: 20px;
 
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
+}
+
+.values h2 {
+  font-size: 50px;
+  line-height: 30px;
+  font-weight: 400;
+  letter-spacing: 5px;
+  color: #655d4c;
+}
+
+.values h5 {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-style: italic;
+  color: #655d4c;
+  font-weight: bold;
+}
+
+.values p {
+  color: #655d4c;
+}
+
+.whoweare {
+  width: 50%;
+  height: 70vh;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  border-right: solid 2px #655d4c;
+}
+
+.whoweare h2 {
+  font-size: 50px;
+  line-height: 30px;
+  font-weight: 400;
+  letter-spacing: 5px;
+  color: #655d4c;
+}
+
+.whoweare p {
+  color: #655d4c;
 }
