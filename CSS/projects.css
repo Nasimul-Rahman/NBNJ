@@ -1,0 +1,37 @@
+.project_cards_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+
+}
+
+.project_card {
+    width: 80%;
+    height: 100px;
+
+    border-bottom: 2px solid #655d4c;
+    color: #655d4c;
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 1s;
+}
+
+.project_card:hover {
+    background-color: #655d4c;
+    color: white;
+    transition: 1s;
+}
+
+.project_card h2 {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
