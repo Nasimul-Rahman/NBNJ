@@ -4,9 +4,14 @@
 @import 'footer.css';
 @import 'about.css';
 @import 'projects.css';
+@import 'contact.css';
 
 body {
   margin: 0px;
   background-color: #fafafa;
   width: 100%;
+}
+
+.container {
+  margin: 0px;
 }
