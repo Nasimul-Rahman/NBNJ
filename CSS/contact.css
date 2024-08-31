@@ -31,9 +31,9 @@
 }
 
 .contact_card h3 {
-    font-size: 15px;
+    font-size: 25px;
     line-height: 22px;
-    font-weight: 500;
+    font-weight: bold;
     letter-spacing: 1px;
     color: #655d4c;
 }
@@ -45,12 +45,14 @@
 
 .contact_detail_card_row {
     width: 100%;
+    margin: 20px;
     display: flex;
     justify-content: space-around;
 }
 
 .contact_detail_card {
     background-color: #655d4c;
+    border-radius: 3px;
     width: 30%;
     height: 15vh;
 
@@ -67,4 +69,20 @@
     color: whitesmoke;
     font-weight: 400;
 
+}
+
+#address_card {
+    width: 40%;
+    height: 40vh;
+    text-align: center;
+
+    flex-direction: column;
+}
+
+#business_hours_card {
+    width: 40%;
+    height: 40vh;
+    text-align: center;
+
+    flex-direction: column;
 }
