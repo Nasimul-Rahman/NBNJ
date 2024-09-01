@@ -38,3 +38,12 @@
     font-weight: 400;
     letter-spacing: 3px;
 }
+
+@media (max-width: 480px) {
+
+    .project_card h2 {
+        text-align: center;
+        font-size: 18px;
+    }
+   
+}

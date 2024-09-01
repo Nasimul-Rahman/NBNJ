@@ -68,3 +68,45 @@
 .whoweare p {
   color: #655d4c;
 }
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 20px;
+  }
+  .aboutpage_main_container {
+    flex-direction: column;
+    height: 240vh;
+    margin-top: 90px;
+  }
+
+  .whoweare {
+    width: 100%;
+    height: 70vh;
+    border: none;
+  }
+
+  .whoweare h2 {
+    font-size: 20px;
+  }
+
+  .whoweare p {
+    font-size: 15px;
+  }
+
+  .values {
+    width: 100%;
+    height: 80vh;
+  }
+
+  .values h2 {
+    font-size: 20px;
+  }
+
+  .values h5 {
+    font-size: 15px;
+  }
+
+  .values p {
+    font-size: 15px;
+  }
+}
