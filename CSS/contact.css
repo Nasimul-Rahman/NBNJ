@@ -111,7 +111,7 @@
     .contact_detail_card_row {
         flex-direction: column;
         margin: 0px;
-        height: 200px;
+        height: 50vh;
     }
 
     .contact_detail_card {
