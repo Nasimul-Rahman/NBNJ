@@ -59,3 +59,10 @@
     background-image: url("media/banner-img.jpg");
   }
 }
+
+
+@media (max-width:480px) {
+  .banner {
+    height: 70vh;
+  }
+}
